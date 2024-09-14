@@ -1,10 +1,16 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
-    background-image: url(Backgroundimage.png);
-    background-size: 150vw 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+/* Body Styling */
+div {
+    margin: auto;
+    
 }
+body {
+ font-family: "Cabin", sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
 
 
 h1 {
@@ -14,62 +20,304 @@ h1 {
     align-items: center;
     float: right;
     margin-left: 2%;
+    margin-right: 2vw;
+    color: white;
+    text-shadow: 2px, 2px grey;
 
 }
 
-p {
-display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
-.logo {
-    margin-top: 1%;
-    display:block;
-width: 20vw;
+
+    /* Nav Bar and Logo Styling */
+
+    nav {
+
+        float: right;
+        line-height: 8vh;
+        margin-right: 4vw;
+    }
+    
+    
+    
+    
+    header {
+        margin-top: 0;
+        width: 100vw;
+        height: 8vh;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        z-index: 999;   
+    }
+    
+   
+    
+    
+    .logo {
+    
+        float: left;
+        height: 7vh;
+        margin-top: 0.3vh;
+        margin-left: 7vw;
+        }
+    
+    
+        .youtube {
+    color: red;
+    
+        }
+    
+       
+        .tiktok {
+    
+            color: rgb(0, 0, 0);
+    
+        }
+    
+        .hover {
+    
+            text-decoration: none;
+           margin-left: 0.5vw;
+           margin-right: 0.5vw;
+           font-size: 19px;
+           border-radius: 6px;
+           padding: 4px;
+        }
+    
+        .hover:hover {
+        color: white;
+        background-image: url(Mesh\ Gradient.png);
+        background-size: cover;
+        }
+    
+        .twitch {
+    
+            color: rgb(170, 0, 255);
+            margin-right: 9vw;
+        }
+    
+    
+
+
+
+
+    /* Youtube Video Banner Styling */
+
+    .video {
+        width: 32vw;
+        height: 18vw;
+        display:block;
+    float: left;
+    background: rgba(5, 209, 255, 0.55);
+   margin-left: 2vw;
+   
+    }
+    
+    .youtubebanner {
+    margin-top: 1vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3vh;
+        
+    }
+    
+
+
+
+    /* Youtube Thumbnail Banner Styling */
+
+
+
+
+
+    .vampire, .baron {
+        height: 20vw;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+    }
+    
+    .thumbslideshow {
+    margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.544);
+        width: 100%;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    
+    
+    }
+
+    .thumbslideshow:hover {
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.544);
+        width: 100%;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        content: '';
+       
+        width: 100%;
+        height: 100%;
+        background: rgba(92, 3, 110, 0.764);
+        background-size: cover;
+        opacity: .4;
+        z-index: -1;
+        
+        }
+    
+
+
+
+
+    /* Game Gallery Styling*/
+
+    .games {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+        background: rgba(7, 224, 224, 0.554);
+        width: 100%;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .games:hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+        background: rgba(173, 15, 166, 0.554);
+        width: 100%;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 191, 255, 0.764);
+        background-size: cover;
+        opacity: .4;
+        z-index: -1;
+        
+    }
+    
+    
+    .survivors, .fortnite, .dicey, .balatro {
+    
+        height: 20vw;
+        margin-left: 1%;
+        margin-right: 1%;
+        
+    }
+    
+    
+    
+    
+        
+
+
+
+
+
+
+
+
+
+    .banner-area {
+        background-image: url(IMG_3252.jpeg);
+       background-size: cover;
+       background-position: center center;
+       top: 8vh;
+       height: 50vh;
+       width: 100vw;
+       position: fixed;
+           }
+       
+       
+           .banner-area:after {
+       
+       content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       display: block;
+       width: 100%;
+       height: 100%;
+       background: rgba(92, 3, 110, 0.764);
+       background-size: cover;
+       opacity: .4;
+       z-index: -1;
+       
+           }
+       
+
+
+
+    .content-area {
+        top:48vh;
+                width: 100%;
+                height: 100%;
+                background-image: url(Backgroundimage.png);
+                background-size: 150vw 100vh;
+                position: relative;
+            
+        
+            }
+        
+
+    .batbeebeartext {
+
+display: block;
 margin-left: auto;
 margin-right: auto;
-margin-top: 1%;
+padding-top: 14vh;
+height: 5vh;
+
+    }
+
+
+    h3 {
+
+        color: white;
+
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+   
+        font-size: 22px;
+    }
+
+
+    .twitch-link-body {
+color: white;
+text-decoration: underline;
+margin-left: 0;
+margin-right: 0;
+font-size: 19px;
+border-radius: 0;
+padding: 0;
+
+    }
+
+
+
+.twitch-logo {
+
+    height: 6vh;
+    margin-right: 4vw;
+    margin-left: 1vw;
 }
 
+.youtube-logo {
 
-.video {
-    width: 32vw;
-    height: 18vw;
-    display:block;
-margin-right: %;
-float: left;
-}
-
-.youtubebanner {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-
-.baron {
-height: 20vw;
-margin-left: 1%;
-margin-right: 1%;
-}
-
-
-.vampire {
-    height: 20vw;
-margin-left: 1%;
-margin-right: 1%;
-
-}
-
-.thumbslideshow {
-margin-top: 2%;
-margin-left: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+height: 7vh;
+margin-left: 4vw;
+margin-right: 1vw;
 }
